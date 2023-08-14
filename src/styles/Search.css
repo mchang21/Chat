@@ -1,0 +1,18 @@
+.search {
+    border-bottom: 1px solid lightskyblue;
+}
+
+.searchForm {
+    padding: 10px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: lightgray;
+}
