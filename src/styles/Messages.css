@@ -1,0 +1,8 @@
+@import "./constants.css";
+
+.messages {
+    background-color: var(--messages_bg);
+    padding: 10px;
+    height: calc(100% - 160px);
+    overflow: scroll;
+}
