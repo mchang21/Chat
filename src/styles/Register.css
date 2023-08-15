@@ -1,3 +1,5 @@
+@import "./constants.css";
+
 .formContainer {
     background-color: lightskyblue;
     height: 100vh;
@@ -45,7 +47,7 @@
 }
 
 .formContainer .formWrapper button {
-    background-color: lightskyblue;
+    background-color: var(--signup_btn);
     color: white;
     padding: 10px;
     font-weight: bold;

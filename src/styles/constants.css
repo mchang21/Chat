@@ -1,0 +1,14 @@
+:root {
+    --signup_btn: #8da4f1;
+    --navbar_header: #224c72;
+    --navbar_white: #d6d6ef;
+    --navbar_logout: #407596;
+    --sidebar_color: #3d688c;
+    --userChat_hover: #224c72;
+    --chat_header: #3f78a7;
+    --messages_bg: #c3def5;
+    --message_sender: #8da4f1;
+    --message_receiver: #f5f5f5;
+    --input_text: #2f2d52;
+    --input_send: #8da4f1;
+}

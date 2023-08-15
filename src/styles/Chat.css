@@ -1,10 +1,12 @@
+@import "./constants.css";
+
 .chat {
     flex: 2;
 }
 
 .chat .chatInfo {
     height: 50px;
-    background-color: rgb(63, 120, 167);
+    background-color: var(--chat_header);
     display: flex;
     align-items: center;
     justify-content: space-between;

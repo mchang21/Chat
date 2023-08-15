@@ -1,3 +1,5 @@
+@import "./constants.css";
+
 .userChat {
     padding: 10px;
     display: flex;
@@ -8,7 +10,7 @@
 }
 
 .userChat:hover {
-    background-color: rgb(34, 76, 114);
+    background-color: var(--userChat_hover);
 }
 
 .userChat img {

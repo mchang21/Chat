@@ -1,13 +1,20 @@
-import "../styles/Chat.css"
-import "../styles/Chats.css"
+import "../styles/Chat.css";
+import "../styles/Chats.css";
+
+import Messages from "./Messages";
+import Input from "./Input";
+
 const Chat = () => {
     return (
         <div className="chat">
             <div className="chatInfo">
                 <span>Toast</span>
-                <div className="chatIcons">
-                </div>
+                {/* Currently unused */}
+                {/* <div className="chatIcons">
+                </div> */}
             </div>
+            <Messages/>
+            <Input/>
         </div>
     )
 }
