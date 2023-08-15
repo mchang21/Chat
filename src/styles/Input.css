@@ -1,0 +1,42 @@
+@import "./constants.css";
+
+.chat .input {
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat .input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--input_text);
+    font-size: 18px;
+
+}
+
+.chat .input input::placeholder {
+    color: lightgray;
+}
+
+.chat .input .send {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat .input .send img {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.chat .input .send button {
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: var(--input_send);
+}
