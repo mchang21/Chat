@@ -55,3 +55,12 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.formContainer .formWrapper label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: darkgray;
+    font-size: 12px;
+    cursor: pointer;
+}
