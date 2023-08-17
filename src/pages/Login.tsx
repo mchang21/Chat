@@ -1,20 +1,48 @@
+import { auth } from "../firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 import "../styles/Register.css";
 
 const Login = () => {
-  return (
-    <div className="formContainer">
-        <div className="formWrapper">
-            <span className="logo">Chat</span>
-            <span className="title">Login</span>
-            <form className="form">
-                <input className="input" type="email" placeholder='Email'/>
-                <input className="input" type="password" placeholder='Password' />
-                <button className="button">Login</button>
-            </form>
-            <p>You don't have an account? Register</p>
+
+    const [error, setError] = useState(false);
+    const navigate = useNavigate();
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const form = e.target as HTMLFormElement;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        try {
+            // Sign in
+            await signInWithEmailAndPassword(auth, email, password);
+            navigate("/");
+
+        } catch (error) {
+            setError(true);
+        }
+
+    }
+
+    return (
+        <div className="formContainer">
+            <div className="formWrapper">
+                <span className="logo">Chat</span>
+                <span className="title">Login</span>
+                <form className="form" onSubmit={handleSubmit}>
+                    <input className="input" type="email" name="email" placeholder='Email' />
+                    <input className="input" type="password" name="password" placeholder='Password' />
+                    <button className="button">Login</button>
+                    {error && <span>Something went wrong!</span>}
+                </form>
+                <p>You don't have an account? <Link to="/register">Register</Link></p>
+            </div>
         </div>
-    </div>
-  );
+    );
 };
 
 export default Login;
