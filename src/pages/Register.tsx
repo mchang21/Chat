@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import addPhoto from "../images/addPhoto.svg";
 
 import "../styles/Register.css";
@@ -88,7 +88,7 @@ const Register = () => {
                     <button className="button">Sign up</button>
                     {error && <span>Something went wrong!</span>}
                 </form>
-                <p>You do have an account? Login</p>
+                <p>You do have an account? <Link to="/login">Login</Link></p>
             </div>
         </div>
     );
