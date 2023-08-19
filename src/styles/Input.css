@@ -39,4 +39,5 @@
     padding: 10px;
     color: white;
     background-color: var(--input_send);
+    cursor: pointer;
 }
