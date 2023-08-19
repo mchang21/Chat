@@ -4,5 +4,25 @@
     background-color: var(--messages_bg);
     padding: 10px;
     height: calc(100% - 160px);
-    overflow: scroll;
+    overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ababab;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #898989;
 }
