@@ -1,27 +1,18 @@
-# React + TypeScript + Vite
+# Realtime Chat Web Application using React and Firebase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a simple yet effective realtime chat web application built using React for the frontend and Firebase for the backend. The application allows users to engage in real-time conversations, making it suitable for various communication purposes.
 
-Currently, two official plugins are available:
+![App Screenshot](./src/images/chat_screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Realtime Messaging:** Users can exchange messages in real-time, providing a seamless and instant communication experience.
+- **User Authentication:** The application utilizes Firebase Authentication to securely manage user registration and login processes.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **React:** The frontend is built using React, a popular JavaScript library for building user interfaces.
+- **Firebase:** Firebase is used as the backend infrastructure, offering features like realtime database, authentication, and more.
+- **Firebase Authentication:** User registration and authentication are handled using Firebase's built-in authentication services.
+- **Firebase Realtime Database:** The application uses Firebase Realtime Database to store and sync chat messages in real-time.
+- **CSS:** The application is styled using CSS to create an intuitive and visually appealing user interface.
