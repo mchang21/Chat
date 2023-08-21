@@ -14,9 +14,6 @@ const Chat = () => {
         <div className="chat">
             <div className="chatInfo">
                 <span>{data.user?.displayName}</span>
-                {/* Currently unused */}
-                {/* <div className="chatIcons">
-                </div> */}
             </div>
             <Messages/>
             <Input/>
